@@ -13,7 +13,10 @@ function Header() {
 
             <div className="left">
             <MenuIcon/>
+            {/* <div className="icon"> */}
             <img  className="header_logo" src="/youtube.png" alt="" />
+             {/* <strong>youtube</strong> */}
+             {/* </div> */}
             </div>
            
            <div className="header_input">

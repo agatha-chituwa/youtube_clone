@@ -13,6 +13,11 @@
     object-fit: contain;
     margin-left: 20px;
 }
+.icon{
+    height: 20px;
+    object-fit: contain;
+    margin-left: 20px;
+}
 .header_input{
     display: flex;
     align-items: center;

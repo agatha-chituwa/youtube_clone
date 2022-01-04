@@ -1,6 +1,8 @@
 
 import './App.css';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Recomended from './components/Recomended';
 
 
 function App() {
@@ -8,8 +10,8 @@ function App() {
     <div className="App">
     <Header/>
     <div className="app_page">
-      {/* <Sidebar/>
-      <RecommendedVideos/> */}
+      <Sidebar/>
+      <Recomended/>
     </div>
     </div>
   );
