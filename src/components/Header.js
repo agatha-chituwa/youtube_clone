@@ -9,14 +9,31 @@ import {useEffect, useState} from 'react';
 
 
 function Header() {
-    const api_key = "AIzaSyBVbftK43cCIKuQsCXxirBo7t-V0xwlCls";
+    // const api_key = "AIzaSyBVbftK43cCIKuQsCXxirBo7t-V0xwlCls";
 
-    const [video, setVideo] = useState([]);
+    // const [search, setSearch] = useState("");
 
+    //     const onSubmitForm = async(e) => {
+    //         e.preventDefault();
+    //         try {
+    //             const body = {search}
+    //             const response = await fetch ("https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBVbftK43cCIKuQsCXxirBo7t-V0xwlCls&type=video&q=ajax", {
+    //                 method:"GET",
+    //                 headers:{ "content-type":"application/json"},
+    //                 body: JSON.stringify(body)
+
+
+    //             });
+    //             console.log(response);
+    //         } catch (err) {
+    //             console.error(err.message);
+    //         }
+
+    //     }
  
-  fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBVbftK43cCIKuQsCXxirBo7t-V0xwlCls&type=video&q=ajax')
-  .then(response => response.json())
-  .then(data => console.log(data));
+//   fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBVbftK43cCIKuQsCXxirBo7t-V0xwlCls&type=video&q=ajax')
+//   .then(response => response.json())
+//   .then(data => console.log(data));
     // const onSubmitForm = async (e) => {
     //     e.preventDefault();
     //     try {
@@ -54,11 +71,16 @@ function Header() {
              {/* </div> */}
             </div>
            
+           {/* i want to be able to search from here */}
+
+          
            <div className="header_input">
                
-           <input type="text"  placeholder="search"/> 
-            <SearchIcon className="header_input_icon"/>
-           </div>
+               <input type="text"  placeholder="search"  /> 
+                <SearchIcon className="header_input_icon"/>
+               </div>
+          
+         
 
            <div className="header_icon">
            <VideoCallIcon className="header_icons"/>
